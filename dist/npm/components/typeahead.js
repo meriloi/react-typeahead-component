@@ -100,7 +100,7 @@ module.exports = React.createClass({
 
         // The `focus` event does not bubble, so we must capture it instead.
         // This closes Typeahead's dropdown whenever something else gains focus.
-        addEvent('focus', handleWindowClose, true);
+        // addEvent('focus', handleWindowClose, true);
 
         // If we click anywhere outside of Typeahead, close the dropdown.
         addEvent('click', handleWindowClose, false);
